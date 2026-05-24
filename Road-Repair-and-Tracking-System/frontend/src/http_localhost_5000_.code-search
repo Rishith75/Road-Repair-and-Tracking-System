@@ -1,0 +1,146 @@
+# Query: http://localhost:5000/
+# ContextLines: 1
+
+31 results - 18 files
+
+frontend\src\Add_Clerk.js:
+  34      try {
+  35:       const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/add_user', {
+  36          method: 'POST',
+
+frontend\src\Add_Supervisor.js:
+  35      try {
+  36:       const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/add_user', {
+  37          method: 'POST',
+
+frontend\src\Admin_Pending.js:
+  10            try {
+  11:             const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allcomplaints?suburb=${"all"}&city=${"all"}&status=${"pending"}`);
+  12              const jsonData = await response.json();
+
+frontend\src\Administrator_Home.js:
+   80            console.log("updating work_schedule");
+   81:           const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/update_work_schedule`);
+   82            console.log("work_scheduleupdated",response);
+
+   97          console.log("start")
+   98:         const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allresources?status=${"ongoing"}`);
+   99          const jsonData = await response.json();
+
+  134      setIsLoading(true);
+  135:     return fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/getcomplaint?complaint_id=${complaint_id}`)
+  136        .then(res => res.json())
+
+  154      setIsLoading(true);
+  155:     return fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/getcomplaint?complaint_id=${complaint_id}`)
+  156        .then(res => res.json())
+
+frontend\src\Clerk_Complaint.js:
+  28      try {
+  29:       const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/complaint_post', {
+  30          method: 'POST',
+
+frontend\src\Clerk_Home.js:
+   95        try {
+   96:         const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allcomplaints?suburb=${user.suburb}&city=${user.city}`);
+   97          if (!response.ok) {
+
+  137            setIsLoading(true);
+  138:           const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/deletecomplaint/${complaintId}`, {
+  139              method: 'DELETE',
+
+frontend\src\Complaints.js:
+  14        try {
+  15:         const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allcomplaints?suburb=${user.suburb}&city=${user.city}&status=${"new"}`);
+  16          const jsonData = await response.json();
+
+frontend\src\Completed_works.js:
+  10            try {
+  11:             const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allcomplaints?suburb=${user.suburb}&city=${user.city}&status=${"completed"}`);
+  12              const jsonData = await response.json();
+
+frontend\src\Data_form.js:
+  38          try {
+  39:           const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/data_post', {
+  40              method: 'POST',
+
+frontend\src\Edit_Data_form.js:
+  28            try {
+  29:             const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/get_data_form?complaint_id=${comp._id}`);
+  30              const jsonData = await response.json();
+
+  53          try {
+  54:           const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/edit_data_post', {
+  55              method: 'POST',
+
+frontend\src\Edit_User.js:
+   24          try {
+   25:             const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/getUserProfilePic?userid=${userid}`);
+   26              
+
+   75          try {
+   76:             const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/edit_profile', {
+   77                  method: 'POST',
+
+  115         try {
+  116:         const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/uploadphoto', {
+  117              method: 'POST',
+
+frontend\src\Home.js:
+  7      try {
+  8:       const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/suburbdetails?suburb=${suburb}`);
+  9        const jsonData = await response.json();
+
+frontend\src\Navbar_Sp.js:
+  28          try{
+  29:        const response=await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/new_complaints?suburb=${user.suburb}`);
+  30         const jsonData = await response.json();
+
+frontend\src\Pending_Complaints.js:
+  11            try {
+  12:             const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allcomplaints?suburb=${user.suburb}&city=${user.city}&status=${"pending"}`);
+  13              const jsonData = await response.json();
+
+frontend\src\Signin.js:
+  56        // Make your fetch request here instead of Axios
+  57:       const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/sign__in', {
+  58          method: 'POST',
+
+frontend\src\Stats.js:
+  15              try {
+  16:                 const completedResponse = await fetch("https://gf9x4q3c-5000.inc1.devtunnels.ms/getcompletedclassworks");
+  17                  const completedData = await completedResponse.json();
+
+  19  
+  20:                 const allWorksResponse = await fetch("https://gf9x4q3c-5000.inc1.devtunnels.ms/getallclassworks");
+  21                  const allWorksData = await allWorksResponse.json();
+
+  23  
+  24:                 const utilizationResponse = await fetch("https://gf9x4q3c-5000.inc1.devtunnels.ms/utilizationStatistics");
+  25                  const utilizationData = await utilizationResponse.json();
+
+  27                 
+  28:                 const workstatus=await fetch("https://gf9x4q3c-5000.inc1.devtunnels.ms/workstatus");
+  29                  const data=await workstatus.json();
+
+frontend\src\UpdateResources.js:
+  22              try {
+  23:                 const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/get_available_resources`);
+  24                  const jsonData = await response.json();
+
+  60                try {
+  61:                 const response = await fetch('https://gf9x4q3c-5000.inc1.devtunnels.ms/update_resources', {
+  62                      method: 'POST',
+
+frontend\src\Workschedule.js:
+  28            try {
+  29:             const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/allcomplaints?suburb=${user.suburb}&city=${user.city}&status=${"ongoing"}`);
+  30              const jsonData = await response.json();
+
+  41        try {
+  42:         const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/workschedule?suburb=${user.suburb}&city=${user.city}&status=ongoing`);
+  43          const jsonData = await response.json();
+
+  71        console.log(needed_resources._id);
+  72:       const response = await fetch(`https://gf9x4q3c-5000.inc1.devtunnels.ms/workschedulecomplete?id=${needed_resources._id}`);
+  73        setFlag(prevFlag => !prevFlag);
